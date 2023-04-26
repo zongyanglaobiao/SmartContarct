@@ -1,0 +1,48 @@
+{
+	"ABI version": 2,
+	"version": "2.3",
+	"header": ["time"],
+	"functions": [
+		{
+			"name": "modify",
+			"inputs": [
+				{"name":"number","type":"uint16"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getCount",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint16"}
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "count",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"count","type":"uint16"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"count","type":"uint16"}
+	]
+}
