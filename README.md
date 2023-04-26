@@ -76,21 +76,21 @@ contract HelloWorld {
 
 **打开remix扩展，点击Start remixed client,开启客户端**
 
-![image-20230426181618022](E:/Program Files (x86)/Typora/note/img/image-20230426181618022.png)
+![image-20230426181618022](/img/image-20230426181618022.png)
 
 **然后再浏览器打开remix官方网站https://remix.ethereum.org，建议是chrome因为稳定，为什么不在浏览器直接编写，因为开发效率不快，Vscoode方便有各种插件支持。如果连接成功Vscode中的remix客户端图标是绿色的，如上图**
 
-![image-20230426182124674](E:/Program Files (x86)/Typora/note/img/image-20230426182124674.png)
+![image-20230426182124674](/img/image-20230426182124674.png)
 
 #### 4）编译、执行
 
 **编译**
 
-![image-20230426182408867](E:/Program Files (x86)/Typora/note/img/image-20230426182408867.png)
+![image-20230426182408867](/img/image-20230426182408867.png)
 
 **执行**
 
-![image-20230426182646764](E:/Program Files (x86)/Typora/note/img/image-20230426182646764.png)
+![image-20230426182646764](/img/image-20230426182646764.png)
 
 ## 3.4、语法
 
