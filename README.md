@@ -35,8 +35,71 @@ Solidity语言的主要特点包括：
 
 ![image-20230426111554391](/img/image-20230426111554391.png)
 
-## 3.2、solidity执行过程
+## 3.2、solidity智能合约执行过程
+
+**图解1**
 
 ![image-20230426111743438](/img/image-20230426111743438.png)
 
-## 3.3、语法	
+**图解2**
+![image-20230426111743438](/img/屏幕截图 2023-04-26 163635.png)
+
+## 3.3、编写第一个智能合约
+
+### 1）准备工作
+
+1. 下载VsCode，
+   - 并下载扩展solidity(**直接搜solidity就行**)
+   - 并下载扩展remix
+
+### 2）编写Hello World智能合约
+
+**编写合约文件注意是后缀名是.sol**
+
+```javascript
+// SPDX-License-Identifier: MIT
+pragma solidity >0.8.0;
+contract HelloWorld {
+    string messsage;  
+	
+    function getGreeting() public view returns (string memory) {
+        return messsage;
+    }
+
+    function setGreeting(string memory _msg) public {
+        messsage = _msg;
+    }
+}
+```
+
+#### 3）连接可以web端
+
+**打开remix扩展，点击Start remixed client,开启客户端**
+
+![image-20230426181618022](E:/Program Files (x86)/Typora/note/img/image-20230426181618022.png)
+
+**然后再浏览器打开remix官方网站https://remix.ethereum.org，建议是chrome因为稳定，为什么不在浏览器直接编写，因为开发效率不快，Vscoode方便有各种插件支持。如果连接成功Vscode中的remix客户端图标是绿色的，如上图**
+
+![image-20230426182124674](E:/Program Files (x86)/Typora/note/img/image-20230426182124674.png)
+
+#### 4）编译、执行
+
+**编译**
+
+![image-20230426182408867](E:/Program Files (x86)/Typora/note/img/image-20230426182408867.png)
+
+**执行**
+
+![image-20230426182646764](E:/Program Files (x86)/Typora/note/img/image-20230426182646764.png)
+
+## 3.4、语法
+
+**语法类似javascript，这里语法只讲特殊点**
+
+#### 1）view
+
+- **加了view的方法表示这个方法是只读不写的**
+
+#### 2）memory
+
+- **一般和引用类型一起使用，而且只能在方法参数或者返回值中使用，在合约中string和数组以及自定义的接口之类都算是引用类型**
