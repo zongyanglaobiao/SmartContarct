@@ -1,7 +1,8 @@
 pragma solidity >0.8.0;
 contract BooleanTest{
     //对于java是 public int count
-    uint16 public count ;
+    uint16  count ;
+    
     /*
         对比java
         public void  modify(int count){
@@ -10,10 +11,12 @@ contract BooleanTest{
     
     */
     function modify(uint16 number) public{
-        if(number < 10){
+        if(number > 10){
             return;
         }else if(number > 0){
             count += number;
+        }else {
+            return ;
         }
     }
     /*
@@ -23,7 +26,7 @@ contract BooleanTest{
         }
         这里的防护直是returns别搞错了
     */
-    function getCount() public returns(uint16){
+    function getCount() public view  returns(uint16){
         return count;
     }
 

@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getCount",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "number",
+						"type": "uint16"
+					}
+				],
+				"name": "modify",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"demo02_solidity type test/BooleanTest.sol": "BooleanTest"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"demo02_solidity type test/BooleanTest.sol": {
+			"keccak256": "0x4dcba52b2c0adb724d01d911775edd8b9e42ece8055edc76cdb5aa0c4a0ca146",
+			"urls": [
+				"bzz-raw://5df114bac0968728db99490d7de89f89969d896e2e4ee275042db76a6d0a245c",
+				"dweb:/ipfs/QmSHf3mXcYJXsJ5FaAjmn76YKJX4sVRDwRcCiQvTWduJuh"
+			]
+		}
+	},
+	"version": 1
+}
