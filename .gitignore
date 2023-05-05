@@ -1,7 +1,21 @@
+# 根路径
 node_modules/
+artifacts/
+*.json
 
-/demo01/*
+
+demo01/*
 !/demo01/*.sol
+demo01/*~*
 
-/demo02/*
-!/demo02/*.sol
+/demo02_solidity type test/*
+!/demo02_solidity type test/*.sol
+/demo02_solidity type test/*~*
+
+/demo03_table/*
+!/demo03_table/*.sol
+/demo03_table/*~*
+
+/demo04_test_questions/*
+!/demo04_test_questions/*.sol
+/demo04_test_questions/*~*
